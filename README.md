@@ -49,7 +49,7 @@ Pre-flight and ground checks.
 - RPM (headspeed)
 - Flight timer
 - Battery voltage, cell voltage, battery percentage
-- BEC voltage, current draw, capacity used
+- BEC voltage, current draw (peak — tracks the max value and holds it after current drops to zero), capacity used
 - Model image (loads `ModelName.png` from the widget folder, falls back to `default.png`)
 - Model name
 - Clock
@@ -66,7 +66,7 @@ Post-flight review screen. Planned for flight summary data.
 ### Battery Warning
 - Triggers when cell voltage drops below **4.15V**
 - Battery indicator blinks red as a visual alert
-- Warning is suppressed once the helicopter is armed (no false alerts on the bench)
+- Warning is permanently suppressed once the helicopter is armed — it will not reappear after disarming, only after telemetry is lost and re-established (prevents false alerts on the bench)
 
 ---
 
