@@ -1,5 +1,6 @@
 --------------------------------------------------
 -- CONFIG
+-- Last edited via Claude Code on the web
 --------------------------------------------------
 
 local NAME = "RotorDash"
